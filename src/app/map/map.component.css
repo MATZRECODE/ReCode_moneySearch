@@ -1,3 +1,8 @@
 .sebm-google-map-container {
-       height: 600px;
+       height: 900px;
  }
+
+ .border-bodded{
+	border:#e3e3e3 1px solid;
+	border-radius: 3px;
+}

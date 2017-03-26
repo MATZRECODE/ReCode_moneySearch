@@ -1,7 +1,14 @@
-<div class="col-md-6">
+<div class="col-md-6 border-bodded">
 	<sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
 		<sebm-google-map-marker [latitude]=" lat " [longitude]=" lng " ></sebm-google-map-marker>
   		<sebm-google-map-marker *ngFor="let marker of machinePoints" [latitude]=" marker.latitude " [longitude]=" marker.longitude " ></sebm-google-map-marker>
+
+  		<sebm-google-map-marker [latitude]="3.4157163 " [longitude]=" 6.4353617 " ></sebm-google-map-marker>
+
+  		<sebm-google-map-marker [latitude]=" 3.4205929 " [longitude]=" 6.4343071 " ></sebm-google-map-marker>
+
+  		<sebm-google-map-marker [latitude]=" 3.4157163 " [longitude]=" 6.4353617 " ></sebm-google-map-marker>
+
 	</sebm-google-map>
 </div>
 	

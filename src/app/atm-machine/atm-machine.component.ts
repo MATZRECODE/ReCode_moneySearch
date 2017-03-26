@@ -13,7 +13,7 @@ export class AtmMachineComponent implements OnInit {
 
 	@Input() public latitude;
 
-	@Input() public machines;
+	@Input() public machines: any;
   constructor() { }
 
   ngOnInit() {

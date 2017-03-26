@@ -1,6 +1,8 @@
-<div class="col-md-3">
+<div class="col-md-3 .border-bodded">
 <div>
-	<app-atm-machine *ngFor="let marker of machinePoints" [terminal]=" marker.terminal " [longitude]=" marker.longitude " [latitude]= " marker.terminal " >
+	<ul style="overflow: hidden;">
+		<app-atm-machine *ngFor="let marker of machinePoints" [terminal]=" marker.terminal " [longitude]=" marker.longitude " [latitude]= " marker.latitude " [machines]=" marker.machines ">
 	</app-atm-machine>
+	</ul>
 </div>
 </div>

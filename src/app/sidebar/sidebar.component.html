@@ -1,21 +1,24 @@
-<div class="col-md-3">
+<div class="col-md-3 border-bodded">
 	<div class="col-md-12">
-		<div class="col-md-12">
-
-		<select class="form-group" [(ngModel)]="selectedValue">
-			<option>Enter Your bank Code</option>
-			 <option *ngFor="let c of bankCodes | keys" value=" {{ c.key }}">{{ c.value }}</option>
-		</select>
+		<span style="font-size: 20px">Personalize Application</span>
 	</div>
 	<div class="col-md-12">
-		<div class="form-group">
-    		<label for="pwd"></label>
-    		<input type="text" class="form-control" id="pwd" [(ngModel)]="account_number" placeholder="Pls enter your account">
+		<div class="col-md-12 input-group">
+			<label for="">Select A Bank Code</label>
+			<select class="form-control" [(ngModel)]="selectedValue">
+			<option>Enter Your bank Code</option>
+				 <option *ngFor="let c of bankCodes | keys" value=" {{ c.key }}">{{ c.value }}</option>
+			</select>
+		</div>
+		<div class="col-md-12 input-group">
+			<div class="form-control">
+    			<label for="pwd">Enter Your Account</label>
+    			<input type="text" class="form-control" id="pwd" [(ngModel)]="account_number" placeholder="Pls enter your account">
   		</div>
 	</div>
-	<div class="col-md-12">
-		<div class="form-group">
-    		<button class="btn btn-primary " type=""  (click)="submitDetails()" value="Go" >GO</button>
+	<div class="col-md-12 input-group">
+		<div class="form-control">
+    		<button class="btn btn-primary " type=""  (click)="submitDetails()" value="Go" >Validate</button>
   		</div>
 	</div>
 	</div>

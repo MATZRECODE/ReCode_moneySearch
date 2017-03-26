@@ -16,6 +16,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FlutterThingsService} from './flutter-things.service';
 import { OurStuffService } from './our-stuff.service';
 import { ConverterPipe } from './converter.pipe';
+import { StylemapDirective } from './stylemap.directive';
+import { LocationsetPipe } from './locationset.pipe';
+import { GoogleMapsDirective } from './google-maps.directive';
+import { AtmbarComponent } from './atmbar/atmbar.component';
 
 
 @NgModule({
@@ -26,7 +30,11 @@ import { ConverterPipe } from './converter.pipe';
     MapComponent,
     FooterComponent,
     SidebarComponent,
-    ConverterPipe
+    ConverterPipe,
+    StylemapDirective,
+    LocationsetPipe,
+    GoogleMapsDirective,
+    AtmbarComponent
   ],
   imports: [
     AgmCoreModule.forRoot({

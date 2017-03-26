@@ -1,0 +1,89 @@
+[
+	{
+		"address": "Sapara Wiliams Close Eti-Osa",
+		"terminal": "Sapara Wiliams UBA",
+		"number": "5443",
+		"longitude": "6.4343071",
+		"latitude": "3.4205929",
+		"machines": {
+			"machine1": {
+				"id": "002",
+				"status": 1,
+				"message": "No cash"
+			},
+			"machine2": {
+				"id": "",
+				"status": 1,
+				"message": "Busy"
+			},
+			"machine3": {
+				"id": "",
+				"status": 1,
+				"message": "Free"
+			},
+			"machine4": {
+				"id": "",
+				"status": 0,
+				"message": "Offline"
+			}
+		}
+	},
+	{
+		"address": "Kofo Abayomi Street, Lagos",
+		"terminal": "Kofo Abayomi Street Zenith Bank",
+		"number": "6503",
+		"longitude": "6.4353617",
+		"latitude": "3.4157163",
+		"machines": {
+			"machine1": {
+				"id": "002",
+				"status": 1,
+				"message": "No cash"
+			},
+			"machine2": {
+				"id": "003",
+				"status": 1,
+				"message": "Busy"
+			},
+			"machine3": {
+				"id": "",
+				"status": 1,
+				"message": "Free"
+			},
+			"machine4": {
+				"id": "",
+				"status": 0,
+				"message": "Offline"
+			}
+		}
+	},
+	{
+		"address": "Kofo Abayomi Street, Lagos",
+		"terminal": "Kofo Abayomi Street Zenith Bank",
+		"number": "6503",
+		"longitude": "6.4353617",
+		"latitude": "3.4157163",
+		"machines": {
+			"machine1": {
+				"id": "002",
+				"status": 1,
+				"message": "No cash"
+			},
+			"machine2": {
+				"id": "003",
+				"status": 1,
+				"message": "Busy"
+			},
+			"machine3": {
+				"id": "",
+				"status": 1,
+				"message": "Free"
+			},
+			"machine4": {
+				"id": "",
+				"status": 0,
+				"message": "Offline"
+			}
+		}
+	}
+]

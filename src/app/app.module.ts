@@ -20,6 +20,7 @@ import { StylemapDirective } from './stylemap.directive';
 import { LocationsetPipe } from './locationset.pipe';
 import { GoogleMapsDirective } from './google-maps.directive';
 import { AtmbarComponent } from './atmbar/atmbar.component';
+import { AtmMachineComponent } from './atm-machine/atm-machine.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { AtmbarComponent } from './atmbar/atmbar.component';
     StylemapDirective,
     LocationsetPipe,
     GoogleMapsDirective,
-    AtmbarComponent
+    AtmbarComponent,
+    AtmMachineComponent
   ],
   imports: [
     AgmCoreModule.forRoot({

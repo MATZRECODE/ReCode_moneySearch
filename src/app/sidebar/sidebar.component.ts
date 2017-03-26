@@ -10,6 +10,10 @@ export class SidebarComponent implements OnInit {
 
 	public bankCodes: any = [];
   public selectedValue = null;
+  public account_number = null;
+  public account_name = null;
+
+  public 
 
   constructor( private flutter:FlutterThingsService) { }
   ngOnInit() {
@@ -21,8 +25,16 @@ export class SidebarComponent implements OnInit {
       }
     });
   }
-  public submit(){
-  	// sending the request for the various input details
+  submitDetails() {
+     let model = {
+       'account_number':this.selectedValue,
+       'bank_code':this.account_number
+     }
+     this.flutter.requestUserStuff(model).subscribe(data =>{
+       if(data.status == 'success'){
+         this.account_name = data.account_name
+       }
+     })
   }
 
 }

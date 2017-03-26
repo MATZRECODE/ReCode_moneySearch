@@ -1,5 +1,6 @@
 <div class="col-md-3">
 	<div class="col-md-12">
+		<div class="col-md-12">
 
 		<select class="form-group" [(ngModel)]="selectedValue">
 			<option>Enter Your bank Code</option>
@@ -9,18 +10,18 @@
 	<div class="col-md-12">
 		<div class="form-group">
     		<label for="pwd"></label>
-    		<input type="text" class="form-control" id="pwd" name="account" placeholder="Pls enter your account">
+    		<input type="text" class="form-control" id="pwd" [(ngModel)]="account_number" placeholder="Pls enter your account">
   		</div>
 	</div>
 	<div class="col-md-12">
 		<div class="form-group">
-    		<label for="pwd">Password:</label>
-    		<input type="text" class="form-control"  placeholder="Pls enter your merchant ID">
+    		<button class="btn btn-primary " type=""  (click)="submitDetails()" value="Go" >GO</button>
   		</div>
 	</div>
+	</div>
 	<div class="col-md-12">
-		<div class="form-group">
-    		<button class="btn btn-primary " type="submit" value="Go" >GO</button>
-  		</div>
+		<div>
+			{{ account_name }}
+		</div>
 	</div>
 </div>
